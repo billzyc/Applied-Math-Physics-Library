@@ -1,0 +1,6 @@
+.idea/
+.DS_Store
+
+ball-launch/cmake-build-debug/
+ball-launch/.idea/
+ball-launch/CMakeLists.txt
