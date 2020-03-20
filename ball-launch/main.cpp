@@ -11,11 +11,11 @@ namespace environment {
 }
 
 void calculateLocation(Grid &currentGrid, Ball &currentBall, int secondsPassed){
-    double x =  currentGrid.getInitialX() + currentGrid.positionKinematicFormula(currentBall.getVelocityX(), secondsPassed, environment::xResistance);
-    double y = currentGrid.getInitialY() + currentGrid.positionKinematicFormula(currentBall.getVelocityY(), secondsPassed, environment::yResistance);
+    double x =  currentGrid.getInitialX() + currentGrid.positionKinematicFormula(currentBall.getInitialVelocityX(), secondsPassed, environment::xResistance);
+    double y = currentGrid.getInitialY() + currentGrid.positionKinematicFormula(currentBall.getInitialVelocityY(), secondsPassed, environment::yResistance);
     currentGrid.setX(x);
     currentGrid.setY(y);
-    std::cout << "current position - x: " << x << " y: " << y;
+    std::cout << " current position - x: " << x << " y: " << y;
 }
 
 double timeToGround(Grid &currentLocation, Ball &currentBall){
@@ -39,14 +39,14 @@ int main() {
 
     int currentTime{0};
     while(location.getY() > 0.0){
-        calculateLocation(location, simulatedBall, currentTime);
         simulatedBall.calculateCurrentVelocity(currentTime, environment::xResistance, environment::yResistance);
+        calculateLocation(location, simulatedBall, currentTime);
         std::cout << " at " << currentTime << " seconds" << std::endl;
         std::cout << std::endl;
         currentTime++;
     }
 
-    std::cout << "it took " << timeToGround(location, simulatedBall ) << " s to stop" << std::endl;
+    std::cout << "it took " << timeToGround(location, simulatedBall ) << "s to stop" << std::endl;
     return 0;
 }
 
