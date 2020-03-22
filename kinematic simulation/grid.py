@@ -1,3 +1,4 @@
+import windowInfo
 class Grid:
 
   def __init__(self):
@@ -7,10 +8,15 @@ class Grid:
     self.y = 0
     
   def getHeight(self):
-    initialHeight = 800 - int(input("enter the height of the initial ball in meters: "))
+    initialHeight = windowInfo.height - int(input("enter the height of the initial ball in meters: "))
     self.initialY = initialHeight
     self.y = self.initialY
 
   def positionKinematicFormula (self, initialVelocity, time, acceleration):
     return ((initialVelocity * time) + (acceleration * time * time / 2))
 
+  def calculateLocation(self, currentBall, secondsPassed, environment):
+    x =  self.initialX + self.positionKinematicFormula(currentBall.initialVelocityX, secondsPassed, environment['xResistance'])
+    y = self.initialY - self.positionKinematicFormula(currentBall.initialVelocityY, secondsPassed, environment['yResistance'])
+    self.x = x
+    self.y = y

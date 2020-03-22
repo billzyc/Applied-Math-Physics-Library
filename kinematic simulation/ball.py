@@ -1,7 +1,7 @@
 import math
 
 class Ball:
-  def __init__(self):
+  def __init__(self, width):
     self.velocityX = 0
     self.velocityY = 0
     self.velocity = 0
@@ -9,6 +9,7 @@ class Ball:
     self.initialVelocityY = 0
     self.initialVelocity = 0
     self.angle = 0
+    self.width = width
   
   def getBallConditions(self):
     initialVelocity = int(input("enter the velocity of the initial ball in m/s: "))
