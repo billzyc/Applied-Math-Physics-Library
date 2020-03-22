@@ -1,3 +1,3 @@
-# physics-sims
+# Library of physics simulations and applied math tools
 
-simple physics simulations for to me to refamiliarize my with C++ and have fun with it!
+simple physics and math things for to me to refamiliarize my with C++ and have fun with it!
