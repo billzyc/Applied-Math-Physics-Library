@@ -2,11 +2,19 @@ import windowInfo
 class Grid:
 
   def __init__(self):
-    self.initialX = 50
+    self.initialX = 0
     self.initialY = 0
-    self.x = 50
+    self.x = 0
     self.y = 0
-    
+
+  def setAllX(self, x):
+    self.x = x
+    self.initialX = x
+
+  def setAllY(self, y):
+    self.y = y
+    self.initialY = y
+
   def getHeight(self):
     initialHeight = windowInfo.height - int(input("enter the height of the initial ball in meters: "))
     self.initialY = initialHeight
