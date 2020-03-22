@@ -8,8 +8,8 @@
 class Grid {
 
 private:
-    double m_initalX{0};
-    double m_initalY{0};
+    double m_initialX{0};
+    double m_initialY{0};
     double m_y{0};
     double m_x{0};
 
@@ -23,11 +23,11 @@ public:
     Grid(){}
 
     void setInitialY(double y){
-        m_initalY =y;
+        m_initialY =y;
     }
 
     void setInitialX(double x){
-        m_initalX =x;
+        m_initialX =x;
     }
 
     void setY(double y){
@@ -39,11 +39,11 @@ public:
     }
 
     double getInitialX(){
-        return m_initalX;
+        return m_initialX;
     }
 
     double getInitialY(){
-        return m_initalY;
+        return m_initialY;
     }
 
     double getX(){

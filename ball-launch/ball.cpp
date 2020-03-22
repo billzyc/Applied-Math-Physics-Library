@@ -8,7 +8,6 @@
 
 
 void Ball::getBallConditional() {
-    Ball currentBall;
     std::cout << "enter the velocity of the initial ball in m/s: ";
     std::cin >> m_initial_velocity;
     m_velocity = m_initial_velocity;

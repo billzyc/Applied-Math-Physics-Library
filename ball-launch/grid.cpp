@@ -8,8 +8,8 @@
 
 void Grid::getHeight(){
     std::cout << "enter the height of the initial ball in meters: ";
-    std::cin >> m_initalY;
-    m_y = m_initalY;
+    std::cin >> m_initialY;
+    m_y = m_initialY;
 }
 
 double Grid::positionKinematicFormula (double initialVelocity, int time, double acceleration) {
