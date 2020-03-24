@@ -1,6 +1,11 @@
 .idea/
 .DS_Store
 
-ball-launch/cmake-build-debug/
-ball-launch/.idea/
-ball-launch/CMakeLists.txt
+kinematics/ball-launch/cmake-build-debug/
+kinematics/ball-launch/.idea/
+kinematics/ball-launch/CMakeLists.txt
+
+
+electricity-and-magnetism/electrostatic-force-calculator/cmake-build-debug/
+electricity-and-magnetism/electrostatic-force-calculatorh/.idea/
+electricity-and-magnetism/electrostatic-force-calculator/CMakeLists.txt
