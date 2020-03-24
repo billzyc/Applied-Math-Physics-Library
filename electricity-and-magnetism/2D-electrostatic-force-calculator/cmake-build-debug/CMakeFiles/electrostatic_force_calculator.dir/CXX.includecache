@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/bill.chen/Repo/physics-sims/electricity-and-magnetism/electrostatic-force-calculator/Charge.h
+
+/Users/bill.chen/Repo/physics-sims/electricity-and-magnetism/electrostatic-force-calculator/main.cpp
+iostream
+-
+cmath
+-
+vector
+-
+Charge.h
+/Users/bill.chen/Repo/physics-sims/electricity-and-magnetism/electrostatic-force-calculator/Charge.h
+

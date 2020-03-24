@@ -6,6 +6,6 @@ kinematics/ball-launch/.idea/
 kinematics/ball-launch/CMakeLists.txt
 
 
-electricity-and-magnetism/electrostatic-force-calculator/cmake-build-debug/
-electricity-and-magnetism/electrostatic-force-calculatorh/.idea/
-electricity-and-magnetism/electrostatic-force-calculator/CMakeLists.txt
+electricity-and-magnetism/2D-electrostatic-force-calculator/cmake-build-debug/
+electricity-and-magnetism/2D-electrostatic-force-calculatorh/.idea/
+electricity-and-magnetism/2D-electrostatic-force-calculator/CMakeLists.txt
