@@ -60,6 +60,8 @@ public:
     double calculateDistance(Charge &secondCharge);
 
     double coulombsLaw(Charge &secondCharge);
+
+    double calculateTotalForce(std::vector<Charge> &charges, int numberOfCharges);
 };
 
 
